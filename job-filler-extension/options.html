@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Filler - Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3367D6;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+    }
+    h2 {
+      margin-top: 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+      padding: 10px;
+      border-radius: 4px;
+      margin-top: 15px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Job Application Filler - Options</h1>
+  <p>Configure your personal information to be used when filling out job applications.</p>
+  
+  <div class="section">
+    <h2>API Configuration</h2>
+    <div class="form-group">
+      <label for="apiKey">Gemini API Key:</label>
+      <input type="text" id="apiKey" placeholder="Enter your Gemini API key">
+      <small>Get your API key from <a href="https://ai.google.dev/" target="_blank">Google AI Studio</a></small>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Personal Information</h2>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone">
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address">
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" id="city">
+    </div>
+    <div class="form-group">
+      <label for="state">State:</label>
+      <input type="text" id="state">
+    </div>
+    <div class="form-group">
+      <label for="zipCode">Zip Code:</label>
+      <input type="text" id="zipCode">
+    </div>
+    <!-- Add these fields to your existing options.html form -->
+    <div class="form-group">
+      <label for="preferredName">Preferred Name:</label>
+      <input type="text" id="preferredName" class="form-control">
+    </div>
+    
+    <div class="form-group">
+      <label for="pronouns">Pronouns:</label>
+      <select id="pronouns" class="form-control">
+        <option value="He/Him">He/Him</option>
+        <option value="She/Her">She/Her</option>
+        <option value="They/Them">They/Them</option>
+        <option value="Other">Other</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="currentCompany">Current Company:</label>
+      <input type="text" id="currentCompany" class="form-control">
+    </div>
+    
+    <!-- Add dropdown configurations section -->
+    <h3>Common Application Dropdown Answers</h3>
+    
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" class="form-control">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Non-binary">Non-binary</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="hispanicEthnicity">Hispanic/Latino:</label>
+      <select id="hispanicEthnicity" class="form-control">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Prefer not to say">Prefer not to say</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="veteranStatus">Veteran Status:</label>
+      <select id="veteranStatus" class="form-control">
+        <option value="I am not a protected veteran">I am not a protected veteran</option>
+        <option value="I identify as one or more of the classifications of a protected veteran">I identify as one or more of the classifications of a protected veteran</option>
+        <option value="I don't wish to answer">I don't wish to answer</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="disabilityStatus">Disability Status:</label>
+      <select id="disabilityStatus" class="form-control">
+        <option value="No, I don't have a disability">No, I don't have a disability</option>
+        <option value="Yes, I have a disability">Yes, I have a disability</option>
+        <option value="I don't wish to answer">I don't wish to answer</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="workAuthorization">Work Authorization:</label>
+      <select id="workAuthorization" class="form-control">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="visaSponsorship">Require Visa Sponsorship:</label>
+      <select id="visaSponsorship" class="form-control">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="relocate">Willing to Relocate:</label>
+      <select id="relocate" class="form-control">
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h2>Professional Information</h2>
+    <div class="form-group">
+      <label for="education">Education:</label>
+      <textarea id="education" rows="4" placeholder="Degree, Institution, Year"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="experience">Work Experience:</label>
+      <textarea id="experience" rows="6" placeholder="Position, Company, Duration, Responsibilities"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="skills">Skills:</label>
+      <textarea id="skills" rows="4" placeholder="List your skills, separated by commas"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="linkedin">LinkedIn URL:</label>
+      <input type="url" id="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+    </div>
+    
+    <div class="form-group">
+      <label for="github">GitHub URL:</label>
+      <input type="url" id="github" placeholder="https://github.com/yourusername">
+    </div>
+    
+    <div class="form-group">
+      <label for="portfolio">Portfolio URL:</label>
+      <input type="url" id="portfolio" placeholder="https://yourportfolio.com">
+    </div>
+    
+    <div class="form-group">
+      <label for="salaryExpectations">Salary Expectations:</label>
+      <input type="text" id="salaryExpectations" placeholder="e.g. $XX,XXX or Negotiable">
+    </div>
+    
+    <div class="form-group">
+      <label for="availability">Availability:</label>
+      <select id="availability" class="form-control">
+        <option value="Immediately">Immediately</option>
+        <option value="1 week">1 week</option>
+        <option value="2 weeks">2 weeks</option>
+        <option value="1 month">1 month</option>
+        <option value="Negotiable">Negotiable</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label for="references">References:</label>
+      <textarea id="references" rows="3" placeholder="Name, Position, Company, Email, Phone"></textarea>
+    </div>
+    
+    <div class="form-group">
+      <label for="coverLetter">Standard Cover Letter:</label>
+      <textarea id="coverLetter" rows="6" placeholder="Paste your standard cover letter text here"></textarea>
+    </div>
+  </div>
+  
+  <button id="save">Save Information</button>
+  <div id="status" class="success">Settings saved successfully!</div>
+  
+  <script src="js/options.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Filler</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      background-color: #4285F4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3367D6;
+    }
+    .status {
+      margin-top: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <h2>Job Application Filler</h2>
+  <p>Click the button below to fill out the current job application form.</p>
+  <button id="fillForm">Fill Form</button>
+  <div id="status" class="status" style="display: none;"></div>
+  
+  <hr>
+  <p><a href="options.html" target="_blank">Open Options</a> to set up your personal information.</p>
+  
+  <script src="js/popup.js"></script>
+</body>
+</html>

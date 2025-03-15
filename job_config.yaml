@@ -1,0 +1,57 @@
+test_mode: true
+pause_for_review: true
+
+# Required fields for job search
+positions:
+  - "Software Engineer"
+  - "Python Developer"
+  - "Full Stack Developer"
+
+locations:
+  - "Mumbai, India"
+
+personal_information:
+  name: "Devdatta"
+  surname: "Talele"
+  email: "devtalele0@gmail.com"
+  phone: "9370091908"
+  city: "mumbai"
+  state: "maharashtra"
+  country: "india"
+  preferred_name: "Dev"
+  pronouns: "He/Him"
+  current_company: "hdge3"
+  social_profiles:
+    linkedin: "https://linkedin.com/in/yourprofile"
+    github: "https://github.com/yourusername"
+    twitter: "https://twitter.com/yourhandle"
+    portfolio: "https://yourportfolio.com"
+    stackoverflow: "https://stackoverflow.com/users/yourid"
+    other: "https://other-profile.com"
+  address: "32,threetwo,road"
+  zip_code: "429112"
+  phone_prefix: "+91"
+
+professional_profile:
+  years_of_experience: 5
+  technical:
+    - "Python"
+    - "JavaScript"
+    - "React"
+  achievements:
+    - "Achievement 1"
+    - "Achievement 2"
+  work_history: "Brief work history"
+  education:
+    - degree: "Bachelor's Degree"
+      field: "Computer Science"
+      school: "University Name"
+      year: 2020
+  previous_employee: "No"
+
+experience_level:
+  entry: false
+  mid: true
+  senior: false
+
+resume_path: "resume.pdf"
